@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { VehiculoModule } from './vehiculo/vehiculo.module';
+import { VehiculoListarComponent } from './vehiculo/vehiculo-listar/vehiculo-listar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [VehiculoModule],
+  imports: [RouterOutlet, VehiculoListarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
