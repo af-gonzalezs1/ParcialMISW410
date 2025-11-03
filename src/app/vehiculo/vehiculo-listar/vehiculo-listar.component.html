@@ -1,11 +1,13 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-12">
-      <img src="assets/header.png" class="img-fluid mb-4" alt="Comercialización de Automotores">
+      <h1 class="title">TuSegundazo.com</h1>
+      <hr class="divider" />
+      <img src="assets/header.png" class="img-fluid mb-4" alt="Comercialización de Automotores Nuevos y Usados">
     </div>
   </div>
   <div class="row">
-    <div class="col-12">
+    <div class="col-8">
       <table class="table table-striped">
         <thead class="thead-dark">
           <tr>
@@ -25,5 +27,13 @@
         </tbody>
       </table>
     </div>
+    <div class="col-8">
+        <p *ngFor="let item of marcasTotales">
+          Total {{ item.marca }}: &nbsp;{{ item.total }}
+        </p>
   </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <p class="footer-text">Contact us: +57 3102105253 - info&#64;tusegundazo.com - &#64;tusegundazo</p>
+    </div>
 </div>
